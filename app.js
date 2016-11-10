@@ -5,13 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-var auth = require('./routes/auth');
-
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://ceeck:18261481Ori@ds149567.mlab.com:49567/tasks');
-
 
 var app = express();
 
@@ -27,9 +22,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+/***************** Defining routes *********************/
+
+var index = require('./routes/index');
+var users = require('./routes/users');
+var auth = require('./routes/auth');
+
 app.use('/', index);
 app.use('/users', users);
 app.use('/auth', auth);
+
+/***************** Defining routes *********************/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

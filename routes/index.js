@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 
   res.render('app/index', {
-      title: 'Work Tasks...'
+      title: 'Welcome Work Tasks...'
   });
 });
 

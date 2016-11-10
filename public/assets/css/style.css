@@ -7,6 +7,11 @@ a {
   color: #00B7FF;
 }
 
+a:hover {
+    text-decoration: none;
+    color: rgba(0, 183, 255, 0.54);
+}
+
 h2 {
     color: #0ab8d6
 }
@@ -36,6 +41,30 @@ h2 {
     float: none;
 }
 
+.index h1{
+    text-align: center;
+    color: #0ab8d6;
+    font-size: 1.5em;
+}
+
+.index p{
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgba(38,39,41,.78);
+    padding: 2%;
+}
+
+.index a {
+    margin-right: 5%;
+    font-size: 2em;
+    color: #0ab8d6;
+}
+
+.index a:hover {
+    text-decoration: none;
+    color: rgba(29, 160, 255, 0.61);
+}
+
 .form {
     padding: 1% 3%;
     background-color: rgba(247, 247, 247, 0.55);
@@ -45,10 +74,22 @@ h2 {
     -o-box-shadow: 0 0 8px 0 rgba(163, 156, 158, 0.65);
 }
 
-
-
 .form span {
     text-align: center;
     font-size: 1.8em;
     color: #29b6d3;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+}
+
+footer p {
+    text-align: center !important;
+    margin-bottom: 1%;
+    color: #1078d3;
+
 }

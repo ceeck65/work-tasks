@@ -1,6 +1,10 @@
 extends ../template/layout
 
 block content
-  h1(style="color: #0ab8d6")=title
-      p(style="font-size: 0.82em; font-style: italic; color: rgba(38,39,41,.78)") App for task work manager, typed in Node JS and MongoDB
+  div(class='text-center reset-float index')
+      h1
+        a(href="/") #{title}
+      p ¡App for task work manager, typed in Node JS and MongoDB and Express...!
 
+      a(href="/auth/login") Log in
+      a(href="/auth/signup") Sing up
