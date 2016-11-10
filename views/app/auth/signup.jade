@@ -1,0 +1,31 @@
+extends ../../template/layout
+block content
+    div(class="text-center")
+        h2 #{title}
+    div(class="row")
+        div(class="center-block col-md-5 form space-big-top reset-float")
+            form(action="/login" method="POST" class="form-horizontal")
+                span Crear una cuenta
+                div(class="form-group space-top")
+                    label(for"name" class="col-sm-3 control-label") Nombre
+                    div(class="col-sm-8")
+                        input(type='text' name="name" class='form-control' placeholder='Nombre')
+                div(class="form-group space-top")
+                    label(for"lastname" class="col-sm-3 control-label") Apellido
+                    div(class="col-sm-8")
+                        input(type='text' name="lastname" class='form-control' placeholder='Apellido')
+                div(class="form-group space-top")
+                    label(for"email" class="col-sm-3 control-label") Correo electrónico
+                    div(class="col-sm-8")
+                        input(type='text' name="email" class='form-control' placeholder='Correo electrónico')
+                div(class="form-group space-top")
+                    label(for"username" class="col-sm-3 control-label") Usuario
+                    div(class="col-sm-8")
+                        input(type='text' name="username" class='form-control' placeholder='Usuario')
+                div(class="form-group space-top")
+                    label(for"password" class="col-sm-3 control-label") Contraseña
+                    div(class="col-sm-8")
+                        input(type='password' name="password" class='form-control' placeholder='Contraseña')
+                div(class="form-group space-top")
+                    input(type="submit" class="btn btn-success pull-left spacing-left" value="Registrarse")
+                    a(href="/auth/login" class="pull-right") Ya tengo cuenta
