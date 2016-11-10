@@ -7,6 +7,10 @@ a {
   color: #00B7FF;
 }
 
+h2 {
+    color: #0ab8d6
+}
+
 .reset-float {
     float: none;
 }
