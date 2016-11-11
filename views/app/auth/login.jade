@@ -1,5 +1,10 @@
 extends ../../template/layout
 block content
+    if success && success.length > 0
+        .alert.alert-success.alert-dismissible.fade-in(role="alert")
+            button.close(type="button" data-dismiss="alert" aria-label="Close")
+                span(aria-hidden="true") ×
+            p= success
     div(class="text-center")
         h2
           a(href="/") #{title}
@@ -18,3 +23,6 @@ block content
             div(class="form-group space-top")
                      input(type="submit" class="btn btn-success pull-left spacing-left" value="LogIn")
                      a(href="/auth/signup" class="pull-right") I do not have an account
+
+
+
